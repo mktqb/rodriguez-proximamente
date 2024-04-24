@@ -17,7 +17,7 @@ const taviraj = Taviraj({
 
 export const metadata: Metadata = {
   title: "Rodriguez",
-  description: "Próximamente",
+  description: "Próximamente web",
 };
 export default function RootLayout({
   children,
