@@ -1,0 +1,39 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer components {
+  .animated-line {
+    @apply flex w-full flex-1 flex-col items-center py-10;
+  }
+  
+  .animated-line .el-1 {
+    @apply w-1 flex-1 scale-y-0 animate-transfer-1 bg-white animate-delay-1000;
+  }
+  
+  .animated-line .el-2 {
+    @apply -mt-2 size-4 scale-0 animate-transfer-2 rounded-full bg-white animate-delay-1000;
+  }
+}
