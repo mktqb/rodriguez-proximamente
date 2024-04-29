@@ -35,7 +35,7 @@ export default function Home() {
           </div>
         </div>
       </main>
-      <footer className="bg-red-500 w-full">
+      <footer className="bg-red-600 w-full">
         <div className="container min-h-24 h-[10dvh] py-5 text-center mx-auto">
           <PoweredByQuatrobus className="text-white mx-auto" />
           <p className="text-white text-sm">

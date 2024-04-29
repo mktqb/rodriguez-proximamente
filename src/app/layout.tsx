@@ -18,6 +18,7 @@ const taviraj = Taviraj({
 export const metadata: Metadata = {
   title: "Rodriguez",
   description: "Próximamente web",
+  icons: ["/favicon.png"],
 };
 export default function RootLayout({
   children,
